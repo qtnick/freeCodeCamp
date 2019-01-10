@@ -1,0 +1,75 @@
+body {
+    background-color: #82cc76;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#outer {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.15em;
+    padding: 10px;
+    padding-top: 5px;
+    max-width: 800px;
+    border-radius: 7px;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+#description {
+    text-align: center;
+    padding-top: 10px
+}
+
+.left {
+    display: inline-block;
+    text-align: right;
+    width: 48%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.right {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.userRAM {
+    float: left;
+}
+
+.field {
+    height: 20px;
+    width: 240px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+
+#dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;  
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }  
+
+.radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+  }

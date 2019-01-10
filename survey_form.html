@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="survey.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <div id="outer">
+            <p id="description">Survey about your computer</p>
+            <form id="survey-form">
+                <div>
+                    <div class="left">
+                        <label id="name-label" for="name">* Name:</label>
+                    </div>
+                    <div class="right">
+                        <input id="name" class="field" type="text" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <label id="email-label" for="email">* Email:</label>
+                    </div>
+                    <div class="right">
+                        <input id="email" class="field" type="email" placeholder="Enter your Email" required>
+                    </div>    
+                </div>
+                <div>
+                    <div class="left">    
+                        <label id="number-label" for="number">Age:</label>
+                    </div>
+                    <div class="right">
+                        <input id="number" class="field" type="number" min="18" max="100" placeholder="Enter your age">
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <label for="computer-type">Select your type of computer:</label>
+                    </div>
+                    <div class="right">
+                        <select value="dropdown" name="computer-type" id="dropdown">
+                            <option value="desktop">desktop</option>
+                            <option value="laptop">laptop</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <label id="RAM">RAM capacity:</label>
+                    </div>
+                    <div class="right">
+                        <ul style="list-style: none;">
+                            <li class="radio"><label>4GB or less<input id="4GB" type="radio" class="userRAM" value="1" name="memory"></label></li>
+                            <li class="radio"><label>8GB<input id="8GB" type="radio" class="userRAM" value="2" name="memory"></label></li>
+                            <li class="radio"><label>16GB<input id="16GB" type="radio" class="userRAM" value="3" name="memory"></label></li>
+                            <li class="radio"><label>32GB or more<input id="32GB" type="radio" class="userRAM" value="4" name="memory"></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <label for="processor">Intel or AMD processor:</label>
+                    </div>
+                    <div class="right">
+                        <select value="dropdown" name="processor" id="dropdown">
+                            <option value="Intel">Intel</option>
+                            <option value="AMD">AMD</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <label for="hard-drive">What type of hard drive do you have:</label>
+                    </div>
+                    <div class="right">
+                        <ul id="hard-drive" style="list-style: none;">
+                            <li class="checkbox"><label><input id="HDD" value="1" type="checkbox" name="driveType">HDD</label></li>
+                            <li class="checkbox"><label><input id="SSD" value="2" type="checkbox" name="driveType">SSD</label></li>
+                            <li class="checkbox"><label><input id="SSHD" value="3" type="checkbox" name="driveType">SSHD</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="left">
+                        <label id="comment">Comments:</label>
+                    </div>
+                    <div class="right">
+                        <textarea class="field" style="height: 60px; resize: vertical;">Add any information that you like.</textarea>
+                    </div>
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
